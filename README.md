@@ -82,7 +82,8 @@ What leaves your PC:
 - **AniList**: searches to match your shows; your list, when you press Refresh (or at start, if you turned that on); the changes you make or
   Anirari makes for you (marks, status, score); friend activity, when you open it; covers and banners from AniList's image servers.
 - **Discord**, only if you set it up: what you're watching, through the Discord app on your PC.
-- **GitHub** (this page), only when you press **Check for updates** - or once a day, if you turn that on.
+- **GitHub** (this page), once a day and when you press **Check for updates**: which version is the newest - and on an installed copy
+  the new version's setup, when there is one. Both can be turned off in **Settings › About**.
 - Nothing else: no analytics, no telemetry.
 
 Anirari's server listens only on your own PC (`127.0.0.1`), so websites you visit cannot use it. Backups and support bundles never contain
@@ -90,8 +91,13 @@ your AniList login, and a backup or settings file from someone else cannot chang
 
 ## Updating
 
-**Settings › About › Check for updates** looks here for a newer version and shows what is new, with a button to its download. Run the new
-setup over the old one: everything you had stays.
+From 1.4.1 on, the copy the setup installed **updates itself**: Anirari looks here once a day (and when you press **Settings › About ›
+Check for updates**), downloads a newer version in the background - kept only if it is exactly the file published here, same size and
+SHA-256 - and asks. **Install and restart** makes a backup, closes Anirari, updates it and opens it again in the same window: everything
+you had stays. **Later** asks again the next time you open it. Both parts can be turned off in Settings › About.
+
+The portable zip, and 1.4.0 or older: Settings › About shows what is new with a button to the download - run the new setup over the old
+one, and everything you had stays.
 
 ## When something is wrong
 
