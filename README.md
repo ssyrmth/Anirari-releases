@@ -7,6 +7,8 @@ list kept up to date as you watch. It runs on your own PC, in its own window.
 
 This repository holds the releases; what changed in each version is in its [release notes](../../releases).
 
+![Anirari's library: the banner of a show you are watching (The Apothecary Diaries Season 3) with Resume and Episodes, the filters, and the Continue watching row](screenshots/library.jpg)
+
 ## What it does
 
 - **Your library, matched on AniList.** Anirari finds the shows in your folders and matches them on AniList: covers, banners, seasons,
@@ -27,6 +29,26 @@ This repository holds the releases; what changed in each version is in its [rele
 - Optional: **Discord** status, **Windows notifications** for new episodes, your **friends' activity** from AniList.
 - **Backups** of everything that matters (settings, match fixes, resume points, watch history, Up next) - automatic, every week unless you
   choose otherwise - and a diagnostics page for when something is off.
+
+## A look around
+
+**A show's window**: every episode with its thumbnail and file details, how far you got, and when the next one airs.
+
+![The episode window of The Apothecary Diaries Season 3: the cover, the list status, when episode 6 airs, and the episodes with thumbnails, file details and Resume at 9:12](screenshots/episodes.jpg)
+
+**Library overview**: totals, aired episodes missing on disk, and the next seasons, movies and OVAs that are not in your library yet.
+
+![The library overview: totals, aired episodes missing on disk, and the sequels and movies not in the library yet, each with its cover](screenshots/overview.jpg)
+
+**Ctrl+K**: one search for shows, actions and settings.
+
+![The Ctrl+K search listing the shows, actions and settings that match "fr"](screenshots/search.jpg)
+
+**Themes**: ten built in (here Light, Sakura, Ocean and Cyberpunk) and a theme builder for your own.
+
+![The library in the Light, Sakura, Ocean and Cyberpunk themes](screenshots/themes.jpg)
+
+*The screenshots show a demo library.*
 
 ## What you need
 
