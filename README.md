@@ -10,9 +10,11 @@ This repository holds the releases; what changed in each version is in its [rele
 ## What it does
 
 - **Your library, matched on AniList.** Anirari finds the shows in your folders and matches them on AniList: covers, banners, seasons,
-  split cours, movies, specials and airing times. A wrong match is one search away (**Fix match**).
+  split cours, movies, specials and airing times. A wrong match is one search away (**Fix match**), and a show Anirari cannot place
+  offers its best guess with **Link**.
 - **What to watch next.** Continue watching (with how far you got), Up next (your own shortlist), new-episode and airing badges, a banner
-  with the shows you are watching, grid or list view, filters and sorting, and a library overview (missing episodes, disk space per show).
+  with the shows you are watching, grid or list view, filters and sorting, and a library overview (missing episodes, what is not in your
+  library yet - next seasons, movies, OVAs, your Planning list - and disk space per show).
 - **Search everything with Ctrl+K**: shows, actions and settings, from anywhere.
 - **Episode windows**: every episode with a thumbnail and its file details (resolution, audio and subtitle languages), the next one to
   watch highlighted, other versions of an episode grouped under it, and the episodes you don't have yet listed with when they air.
@@ -65,6 +67,7 @@ Your login is stored encrypted for your Windows account.
 |---|---|
 | **Ctrl+K** or **/** | Search shows, actions and settings |
 | **?** | Every keyboard shortcut |
+| **Arrow keys** | Move between cards and rows once one has focus (Tab, or a click), up to the banner, and between episodes in a show's window |
 | **Refresh** | Look for new files and sync with AniList. Anirari never syncs by itself, unless you turn on **Sync with AniList when the app starts** |
 | **Mark** / **Mark up to here** / **Unmark** | Change your AniList progress by hand (undo in the message that follows) |
 | **Fix match** | When a show is matched to the wrong AniList entry |
@@ -79,7 +82,8 @@ resume points, watch history, your encrypted AniList login, the library cache, t
 
 What leaves your PC:
 
-- **AniList**: searches to match your shows; your list, when you press Refresh (or at start, if you turned that on); the changes you make or
+- **AniList**: searches to match your shows; your list, when you press Refresh (or at start, if you turned that on), and then the sequels and
+  movies of your shows (at most once a week); the changes you make or
   Anirari makes for you (marks, status, score); friend activity, when you open it; covers and banners from AniList's image servers.
 - **Discord**, only if you set it up: what you're watching, through the Discord app on your PC.
 - **GitHub** (this page), once a day and when you press **Check for updates**: which version is the newest - and on an installed copy
@@ -103,7 +107,11 @@ one, and everything you had stays.
 
 | Problem | Try |
 |---|---|
-| AniList says the login expired | **Settings › Accounts & linking › Connect** again; **Diagnostics & logs › Check with AniList** tests it |
+| AniList says the login expired | **Settings › Accounts & linking › Connect** again; **Diagnostics & logs › Check with AniList** tests it. Two weeks before it runs out, a line above the library offers **Reconnect** |
+| "AniList did not accept your login just now" | Your login is kept and tried again on **Refresh** (and by itself after 10 minutes). If it keeps happening, connect again |
+| Refresh says AniList could not be reached | Your saved list stays and your shows keep their matches; press **Refresh** again once you're online |
+| A line says a library folder can't be reached | Switch the drive on or reconnect the network folder (or fix the folder in **Settings › Library**), then **Look again**. Nothing is lost while it's away |
+| Anirari says your settings could not be read | The damaged file is kept as `config.broken-<date>.json` in the data folder. Review the newest automatic backup when it asks - or later in **Settings › Data & storage › Backup & restore** |
 | A show is matched wrongly | **Fix match** in its episode window |
 | No thumbnails or file details | **Settings › Data & storage › Diagnostics & logs** shows which ffmpeg is used; **ffmpeg program** sets another |
 | Episodes open in the wrong player | **Settings › Playback › Play with** and **Player program** |
