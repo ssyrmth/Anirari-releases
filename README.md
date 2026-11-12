@@ -63,7 +63,8 @@ list by status and your drives.
   what lets Anirari follow how far you got, resume and mark episodes watched; without it, episodes open in your default video app.
 - An **[AniList](https://anilist.co)** account to keep your list in step. Without one the library still works: covers and matching come
   from AniList's public data.
-- ffmpeg comes with Anirari (thumbnails, file details, finding openings and endings).
+- ffmpeg (thumbnails, file details, finding openings and endings) is downloaded when you finish the first-run setup - about 110 MB
+  from gyan.dev, so the setup itself stays small.
 
 ## Install
 
@@ -136,6 +137,8 @@ What leaves your PC:
 - **Discord**, only if you set it up: what you're watching, through the Discord app on your PC.
 - **Tailscale**, only with Phone access on and Tailscale installed: Anirari asks the Tailscale program on your PC for its address and
   name (and, with the secure address on, has it serve Anirari over https).
+- **gyan.dev**, only when ffmpeg is downloaded: finishing the first-run setup (unless you untick it), or **Download ffmpeg** in
+  Settings › Data & storage.
 - **GitHub** (this page), once a day and when you press **Check for updates**: which version is the newest - and on an installed copy
   the new version's setup, when there is one. Both can be turned off in **Settings › About**.
 - Nothing else: no analytics, no telemetry.
@@ -167,7 +170,7 @@ one, and everything you had stays.
 | A show is matched wrongly | **Fix match** in its window |
 | VLC on an iPhone says Playback failed | Allow VLC **Local Network** (Settings › Privacy & Security › Local Network), and check that the phone is on the same network or on Tailscale |
 | The phone can't open Anirari's address | **Allow phones in Windows Firewall** in **Settings › App › Phone access**; at home, check the phone is on the same Wi-Fi |
-| No thumbnails or file details | **Settings › Data & storage › Diagnostics & logs** shows which ffmpeg is used; **ffmpeg program** sets another |
+| No thumbnails or file details | **Settings › Data & storage › ffmpeg › Download ffmpeg**; **Diagnostics & logs** shows which ffmpeg is used, **ffmpeg program** sets another |
 | Episodes open in the wrong player | **Settings › Playback › Play with** and **Player program** |
 | Your own CSS hid something | **Ctrl+Alt+C** turns custom CSS off |
 | "Another program is using port 8765" (Anki's AnkiConnect add-on uses it too) | Let Anirari use a free port when it asks, or pick one in **Settings › Data & storage › Port** |
@@ -181,5 +184,7 @@ won't come back).
 
 ## License notes
 
-ffmpeg and ffprobe come with Anirari: FFmpeg 9.0.2, a build from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/), licensed under the GNU
-GPL v3 (`ffmpeg-LICENSE.txt` next to them). Its source code: <https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz>.
+Since 2.0, ffmpeg and ffprobe are not part of Anirari's downloads: Anirari downloads gyan.dev's essentials build of
+[FFmpeg](https://ffmpeg.org) from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) (licensed under the GNU GPL v3; its license is saved
+next to it as `ffmpeg-LICENSE.txt`). Releases up to 1.4.4 included FFmpeg 9.0.2: its source code is
+<https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz>.
