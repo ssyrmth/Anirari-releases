@@ -7,7 +7,7 @@ list kept up to date as you watch. It runs on your own PC, in its own window.
 
 This repository holds the releases; what changed in each version is in its [release notes](../../releases).
 
-![Anirari's library: Home with the banner of a show you are watching (The Apothecary Diaries Season 3) with Resume, Episodes and +, Surprise me, the filter and view buttons, and the Continue watching row](screenshots/library.jpg)
+![Anirari's library: Home with the banner of a show you are watching (The Apothecary Diaries Season 3): its cover, 4 of 12 watched, Resume, Episodes and +, the next episode with 15 min left, and thumbnails of the other shows in the banner; below it Continue watching and Up next](screenshots/library.jpg)
 
 ## What it does
 
@@ -28,7 +28,8 @@ This repository holds the releases; what changed in each version is in its [rele
 - **Your AniList list in step**: progress, status and score. Changes made while you are offline are kept and sent once AniList can be
   reached, and every change can be undone.
 - **Make it yours**: 10 themes, a theme builder (poster colours, ambient glow, background gradients), your own CSS (saved as profiles),
-  which lists the header shows and in what order, card sizes, Reduce motion, optional sound effects.
+  which lists the header shows and in what order, card sizes, Anirari's own cursors in four sizes (or your Windows ones), Reduce motion,
+  optional sound effects.
 - Optional: **Discord** status, **Windows notifications** for new episodes, your **friends' activity** from AniList.
 - **Backups** of everything that matters (settings, match fixes, resume points, watch history, Up next) - automatic, every week unless you
   choose otherwise - and a diagnostics page for when something is off.
@@ -116,6 +117,7 @@ Network).
 | **Ctrl+K** or **/** | Search shows, actions and settings |
 | **?** | Every keyboard shortcut |
 | **Arrow keys** | Move between cards and rows once one has focus (Tab, or a click), up to the banner, and between episodes in a show's window |
+| A row on Home | Its arrows, dragging it with the mouse, **Shift + wheel** or a sideways swipe move it (the plain wheel scrolls the page); **Show all** at its end opens the whole list |
 | **Refresh** | Look for new files and sync with AniList. Anirari never syncs by itself, unless you turn on **Sync with AniList when the app starts** |
 | An episode's **⋯** menu: **Mark** / **Mark up to here** / **Unmark** | Change your AniList progress by hand (undo in the message that follows) |
 | **Fix match** | When a show is matched to the wrong AniList entry |
