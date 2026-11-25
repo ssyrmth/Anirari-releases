@@ -54,7 +54,16 @@ list by status and your drives.
 
 ![The library in the Light, Sakura, Ocean and Cyberpunk themes](screenshots/themes.jpg)
 
-*The screenshots show a demo library.*
+**In motion**: the banner melts from one show to the next; a show's cover flies into its window, which opens at your next episode,
+and flies back when you close it; on a phone, swipe between the tabs and pull a show's window down to close it.
+
+![The banner melting from The Apothecary Diaries to Frieren, Orb and BOCCHI THE ROCK!](screenshots/banner.webp)
+
+![Orb's cover flying from the banner into its window, the list gliding down to episode 17 (Resume at 5:18), then the window closing and the cover flying back](screenshots/window.webp)
+
+![On a phone: swiping from Watching to Planned and Completed and back, opening Kimi ni Todoke from Me to You, and pulling its window down to close it](screenshots/phone.webp)
+
+*The screenshots and clips show a demo library.*
 
 ## What you need
 
